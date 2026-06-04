@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build experiment16",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$env:Path='C:\\Users\\Rose\\Downloads\\arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi\\bin;C:\\Users\\Rose\\Downloads\\openocd-20250710\\OpenOCD-20250710-0.12.0\\bin;C:\\Users\\Rose\\Downloads\\xpack-windows-build-tools-4.4.1-3-win32-x64\\xpack-windows-build-tools-4.4.1-3\\bin;' + $env:Path; make"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/4，程序源码/3，标准例程-HAL库版本/3，标准例程-HAL库版本/实验16 ADC实验"
+      },
+      "problemMatcher": "$gcc",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Flash experiment16",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$env:Path='C:\\Users\\Rose\\Downloads\\arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi\\bin;C:\\Users\\Rose\\Downloads\\openocd-20250710\\OpenOCD-20250710-0.12.0\\bin;C:\\Users\\Rose\\Downloads\\xpack-windows-build-tools-4.4.1-3-win32-x64\\xpack-windows-build-tools-4.4.1-3\\bin;' + $env:Path; make flash"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/4，程序源码/3，标准例程-HAL库版本/3，标准例程-HAL库版本/实验16 ADC实验"
+      },
+      "dependsOn": "Build experiment16",
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean experiment16",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$env:Path='C:\\Users\\Rose\\Downloads\\xpack-windows-build-tools-4.4.1-3-win32-x64\\xpack-windows-build-tools-4.4.1-3\\bin;' + $env:Path; make clean"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/4，程序源码/3，标准例程-HAL库版本/3，标准例程-HAL库版本/实验16 ADC实验"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

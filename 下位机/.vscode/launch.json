@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug experiment16 (OpenOCD)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}/4，程序源码/3，标准例程-HAL库版本/3，标准例程-HAL库版本/实验16 ADC实验",
+      "executable": "${workspaceFolder}/4，程序源码/3，标准例程-HAL库版本/3，标准例程-HAL库版本/实验16 ADC实验/oscilloscope.elf",
+      "gdbPath": "C:/Users/Rose/Downloads/arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gdb.exe",
+      "serverpath": "C:/Users/Rose/Downloads/openocd-20250710/OpenOCD-20250710-0.12.0/bin/openocd.exe",
+      "searchDir": [
+        "C:/Users/Rose/Downloads/openocd-20250710/OpenOCD-20250710-0.12.0/share/openocd/scripts"
+      ],
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f4x.cfg"
+      ],
+      "preLaunchTask": "Build experiment16",
+      "runToEntryPoint": "main"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "STM32F407-HAL-ADC",
+      "includePath": [
+        "${workspaceFolder}/CORE",
+        "${workspaceFolder}/OBJ",
+        "${workspaceFolder}/USER",
+        "${workspaceFolder}/USMART",
+        "${workspaceFolder}/SYSTEM/delay",
+        "${workspaceFolder}/SYSTEM/sys",
+        "${workspaceFolder}/SYSTEM/usart",
+        "${workspaceFolder}/HALLIB/STM32F4xx_HAL_Driver/Inc",
+        "${workspaceFolder}/HALLIB/STM32F4xx_HAL_Driver/Inc/Legacy",
+        "${workspaceFolder}/HARDWARE/LED",
+        "${workspaceFolder}/HARDWARE/KEY",
+        "${workspaceFolder}/HARDWARE/LCD",
+        "${workspaceFolder}/HARDWARE/ADC",
+        "D:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/3.1.1/Drivers/CMSIS/Include",
+        "D:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/3.1.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+      ],
+      "defines": [
+        "USE_HAL_DRIVER",
+        "STM32F407xx"
+      ],
+      "compilerPath": "D:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+      "intelliSenseMode": "windows-msvc-x64",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "browse": {
+        "path": [
+          "${workspaceFolder}/CORE",
+          "${workspaceFolder}/USER",
+          "${workspaceFolder}/SYSTEM",
+          "${workspaceFolder}/HARDWARE",
+          "${workspaceFolder}/HALLIB/STM32F4xx_HAL_Driver/Inc",
+          "D:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/3.1.1/Drivers/CMSIS/Include",
+          "D:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/3.1.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ]
+}

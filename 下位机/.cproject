@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.cross.arm.release.1570262186">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.arm.release.1570262186" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.arm.release.1570262186" name="Release" parent="cdt.managedbuild.config.gnu.cross.arm.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.cross.arm.release.1570262186." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.arm.release.1570262186" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.arm.release">
+							<targetPlatform id="cdt.managedbuild.targetPlatform.gnu.cross.arm.1570262186" name="ARM" superClass="cdt.managedbuild.targetPlatform.gnu.cross.arm"/>
+							<builder id="cdt.managedbuild.builder.gnu.cross.arm.1570262186" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross.arm">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug" path="Debug"/>
+								</outputEntries>
+							</builder>
+							<tool id="cdt.managedbuild.tool.gnu.cross.arm.compiler.c.1570262186" name="ARM GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.cross.arm.compiler.c">
+								<option id="gnu.c.compiler.option.target.cpu.1570262186" name="Target processor" superClass="gnu.c.compiler.option.target.cpu" value="cortex-m4" valueType="string"/>
+								<option id="gnu.c.compiler.option.fpu.1570262186" name="Floating point unit" superClass="gnu.c.compiler.option.fpu" value="fpv4-sp-d16" valueType="string"/>
+								<option id="gnu.c.compiler.option.float.abi.1570262186" name="Floating-point ABI" superClass="gnu.c.compiler.option.float.abi" value="hard" valueType="string"/>
+								<option id="gnu.c.compiler.option.dialect.1570262186" name="Language standard" superClass="gnu.c.compiler.option.dialect" value="gnu11" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.1570262186" name="Include paths" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CORE}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/USER}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/HALLIB/STM32F4xx_HAL_Driver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/SYSTEM/sys}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/SYSTEM/delay}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/SYSTEM/usart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/HARDWARE/KEY}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/HARDWARE/ADC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/HARDWARE/DAC}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1570262186" name="Defined symbols" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F407ZGTx"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+								</option>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.arm.compiler.cpp.1570262186" name="ARM GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.arm.compiler.cpp">
+								<option id="gnu.cpp.compiler.option.target.cpu.1570262186" name="Target processor" superClass="gnu.cpp.compiler.option.target.cpu" value="cortex-m4" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.fpu.1570262186" name="Floating point unit" superClass="gnu.cpp.compiler.option.fpu" value="fpv4-sp-d16" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.float.abi.1570262186" name="Floating-point ABI" superClass="gnu.cpp.compiler.option.float.abi" value="hard" valueType="string"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.arm.assembler.1570262186" name="ARM GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.arm.assembler">
+								<option id="gnu.assembler.option.target.cpu.1570262186" name="Target processor" superClass="gnu.assembler.option.target.cpu" value="cortex-m4" valueType="string"/>
+								<option id="gnu.assembler.option.fpu.1570262186" name="Floating point unit" superClass="gnu.assembler.option.fpu" value="fpv4-sp-d16" valueType="string"/>
+								<option id="gnu.assembler.option.float.abi.1570262186" name="Floating-point ABI" superClass="gnu.assembler.option.float.abi" value="hard" valueType="string"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.arm.linker.1570262186" name="ARM GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.arm.linker">
+								<option id="gnu.c.link.option.target.cpu.1570262186" name="Target processor" superClass="gnu.c.link.option.target.cpu" value="cortex-m4" valueType="string"/>
+								<option id="gnu.c.link.option.fpu.1570262186" name="Floating point unit" superClass="gnu.c.link.option.fpu" value="fpv4-sp-d16" valueType="string"/>
+								<option id="gnu.c.link.option.float.abi.1570262186" name="Floating-point ABI" superClass="gnu.c.link.option.float.abi" value="hard" valueType="string"/>
+								<option id="gnu.c.link.option.script.1570262186" name="Linker script" superClass="gnu.c.link.option.script" value="&quot;${workspace_loc:/${ProjName}/STM32F407ZGTX_FLASH.ld}&quot;" valueType="string"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.arm.objcopy.1570262186" name="ARM GCC Objcopy" superClass="cdt.managedbuild.tool.gnu.cross.arm.objcopy"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="oscilloscope.null.1570262186" name="oscilloscope"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.arm.release.1570262186">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

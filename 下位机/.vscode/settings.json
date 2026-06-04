@@ -1,0 +1,11 @@
+{
+  "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
+  "C_Cpp.errorSquiggles": "enabled",
+  "files.associations": {
+    "*.h": "c",
+    "*.inc": "c"
+  },
+  "files.autoGuessEncoding": true,
+  "files.encoding": "gb2312",
+  "files.autoGuessEncoding": true
+}
